@@ -136,7 +136,7 @@ __global__ void nms_collect(const int64_t boxes_num, const int64_t col_blocks, i
 
       num_to_keep_++;
 
-      if (num_to_keep_==400)
+      if (num_to_keep_==top_k)
           break;
     }
   }
