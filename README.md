@@ -1,4 +1,12 @@
+# Torchvision support for NMS
+
+Note: Since the publication of this repository, NMS support has been included as part of torchvision. Therefore you might want to use this implementation instead:
+https://github.com/pytorch/vision/blob/master/torchvision/ops/boxes.py.
+
+This repository might still be of interest if you need the index in the `keep` list of the highest-scoring box overlapping each input box.
+
 # CUDA implementation of NMS for PyTorch.
+
 
 This repository has a CUDA implementation of NMS for PyTorch 1.0.
 
