@@ -57,6 +57,6 @@ std::vector<at::Tensor> nms_forward(
 }
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
-    m.def("nms", &nms_forward, "NMS");
+    m.def("nms_forward", &nms_forward, "NMS");
 }
 
