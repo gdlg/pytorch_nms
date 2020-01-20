@@ -162,7 +162,7 @@ std::vector<at::Tensor> nms_cuda_forward(
 
   AT_ASSERTM (col_blocks < MAX_COL_BLOCKS, "The number of column blocks must be less than MAX_COL_BLOCKS. Increase the MAX_COL_BLOCKS constant if needed.");
 
-  auto longOptions = torch::TensorOptions().device(torch::kCUDA).dtype(torch::kLong).is_variable(true);
+  auto longOptions = torch::TensorOptions().device(torch::kCUDA).dtype(torch::kLong);
   auto mask = at::empty({boxes_num * col_blocks}, longOptions);
 
   dim3 blocks(DIVUP(boxes_num, threadsPerBlock),
