@@ -8,7 +8,7 @@ This repository might still be of interest if you need the index in the `keep` l
 # CUDA implementation of NMS for PyTorch.
 
 
-This repository has a CUDA implementation of NMS for PyTorch 1.0.
+This repository has a CUDA implementation of NMS for PyTorch 1.4.0.
 
 The code is released under the BSD license however it also includes parts of the original implementation from [Fast R-CNN](https://github.com/rbgirshick/py-faster-rcnn) which falls under the MIT license (see LICENSE file for details).
 
